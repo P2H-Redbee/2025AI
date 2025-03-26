@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 1차시</title>
+</head>
+<body>
+    <h1>내가 원하는 글씨</h1>
+
+    <script>
+        let 변수1
+
+        let ABC
+        let abc
+        
+        // 낙서하는 곳
+        /*   여러 줄에 걸쳐 낙서를 하려는 경우
+        이렇게 줄을 옮겨도 낙서가 유지된다
+        낙서를 닫으려면 */
+
+        let 이름
+        let 키
+        let 몸무게
+        let 표준몸무게
+
+        이름 = "박현홍"
+        키 = 190
+        몸무게 = 90
+
+        표준몸무게 = (키-100) * 0.9
+        
+        console.log(표준몸무게) // 표준몸무게 변수의 데이터를 꺼내서 확인
+        console.log(몸무게)
+        console.log(표준몸무게 - 몸무게)
+
+        console.log( 10 % 3 ) // % : modular 연산 
+
+        /*
+        alert("★★★ 당첨확률 100% ★★★") // alert : 경고하다
+        alert("★★★ 아래 링크 클릭하여 사은품 확인 ★★★") // alert : 경고하다
+        alert("★★★ 특가 이벤트 진행 중 ★★★") // alert : 경고하다
+        */
+
+        let 입력
+        입력 = prompt("입력칸 있는 alert")
+        console.log(입력)
+
+        confirm("o x 확인할 때")
+
+
+    </script>
+</body>
+</html>
