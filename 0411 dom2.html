@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 배우는 날2</title>
+</head>
+<body>
+    <h1>사랑스러운 티모</h1>
+    <img id="티모" src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Teemo_0.jpg" alt="">
+
+
+    <button>버튼1</button>
+    <button>버튼2</button>
+    <button>버튼3</button>
+
+    <script>
+        // 1. 내가 원하는 놈을 선택한다
+        let 사진 = document.querySelector("#티모")
+        console.log(사진)
+
+        // 2. 조진다
+        // 사진.setAttribute("바꿀속성", "무엇으로바꿀지")
+        사진.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQaS_BdUWXZ1H5cV3KZlGXfvoDMQ8WvgRGg&s")
+
+        
+        // 이벤트 거는 법
+        // 1. 내가 원하는 놈을 선택한다
+        // 2. 조진다(이벤트를 걸어준다)
+        사진.addEventListener( "click", function(){
+            console.log("히히힣ㅎ히힣")
+            alert("버섯이 어디 있을까?")
+        }   )
+    </script>
+</body>
+</html>
