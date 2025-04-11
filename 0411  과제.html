@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button { width: 200px; height: 50px; background-color: coral;}
+    </style>
+</head>
+<body>
+    
+    <button id="button1">1</button>
+    <button id="button2">2</button>
+    <button id="button3">3</button>
+
+    <br><br>
+
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Teemo_0.jpg" alt="">
+
+    <script>
+        let 버튼1 = document.querySelector("#button1")
+        let 버튼2 = document.querySelector("#button2")
+        let 버튼3 = document.querySelector("#button3")
+
+        let 이미지 = document.querySelector("img")
+
+        버튼1.addEventListener("click", function() {
+            // 이미지 변경
+            이미지.setAttribute("src", "https://i.ytimg.com/vi/leEKY5s1emg/hqdefault.jpg")    
+        })
+        버튼2.addEventListener("click", function() {
+            // 이미지 변경
+            이미지.setAttribute("src", "https://mblogthumb-phinf.pstatic.net/MjAyMTAyMTZfNTIg/MDAxNjEzNDE5Mzg5MDAx.RlwK0Mou4qANw_ojX0XZWLYP3-tDRbfWxsMuEZH_xZsg.pQINZ_dXK_Ax30k8cEi4KgrxbjY3KJVbQoj8Ch6Jdi8g.JPEG.kumagom94/-I2o1gtk.jpg?type=w800")    
+        })
+        버튼3.addEventListener("click", function() {
+            // 이미지 변경
+            이미지.setAttribute("src", "https://opgg-com-image.akamaized.net/attach/images/20181208102447.716993.jpeg")    
+        })
+    </script>
+</body>
+</html>
