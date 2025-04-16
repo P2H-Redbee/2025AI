@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0425 자바스크립트 속성 조작</title>
+    <style>
+        .tj { color: cornflowerblue; background-color: slateblue; }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbXq9pQf1mKjGYQiHUZvKd1vLqRPJnhuWow&s" alt="">    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbXq9pQf1mKjGYQiHUZvKd1vLqRPJnhuWow&s" alt="">    
+
+    <br>
+
+    <input type="text" placeholder="입력하세요"> 
+    <button>버튼</button>
+    
+    <h1>태준이 걸어다니는 300원</h1>
+
+    <script>
+        let 티모
+        티모 = document.querySelector("img")
+        티모.setAttribute("src", "https://i.namu.wiki/i/QTOLNBAJE5kRCdeJ_ZzlIRY4jvfCW4Nm8GrSe4U4WWCS_KiCFR6TLTei_qfe6ykTWFlCgXOrvRROv11IxJSHBA.webp")
+        티모.setAttribute("width", "300px")
+
+        let 가져온것
+        가져온것 = 티모.getAttribute("src")
+        console.log(가져온것)
+
+        let 입력창
+        입력창 = document.querySelector("input")
+        let 버튼
+        버튼 = document.querySelector("button")
+
+        버튼.addEventListener("click", function() {
+            console.log(입력창.value)
+        })
+        
+        let 태준이
+        태준이 = document.querySelector("h1")
+        태준이.classList.add("tj") // 클래스 추가하기
+        // 태준이.classList.remove("tj") // 클래스 제거하기
+        태준이.classList.toggle("tj") // 클래스 추가 혹은 삭제
+
+    </script>
+</body>
+</html>
