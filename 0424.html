@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+
+    <style>
+
+        * { box-sizing: border-box; }
+
+        .box1{
+            width: 200px; height: 200px;
+            border: 10px solid #000;
+            padding: 10px; 
+
+            margin-left: auto; margin-right: auto;
+
+            margin: 0 auto; /* 상하 좌우 */
+
+            background-color: steelblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>200x200</h1>
+    </div>
+
+    <div class="box1">
+        <h1>200x200</h1>
+    </div>
+
+</body>
+</html>
