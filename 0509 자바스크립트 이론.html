@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트 관련 이론</title>
+
+    <style>
+        .box {
+            width: 200px; height: 200px; background-color: skyblue;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">박스</div>
+
+
+    <script>
+        let 박스 = document.querySelector(".box")
+        박스.addEventListener("click", function(event) {
+            console.log(event)
+        })
+
+        document.addEventListener("keydown", function(event) {
+            console.log(event)
+        })
+    </script>
 </body>
 </html>
