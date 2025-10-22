@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; color: #333333;}
+        body {width: 100%;}
+        .wrap{width: 1200px; margin: 0 auto;}
+        li {list-style-type: none;}
+        a {text-decoration: none;}
+
+        .header {width: 1200px; height: 100px; background-color: turquoise; display: flex; justify-content: space-between; align-items: center;}
+        .logo1{width: 200px; height: 100px; background-color: springgreen;}
+        .menu {display: flex; height: 50px; line-height: 50px; margin-right: 50px; position: relative;}
+        .menu li {width: 150px; text-align: center; background-color: steelblue;}
+        .bg-right {width: 50px; height: 150px; background-color: steelblue; position: absolute; top: 50px; right: -50px;}
+        .bg-left {width: 550px; height: 150px; background-color: steelblue; position: absolute; top: 50px; left: -550px;}
+        
+        .li > ul {display: none;} /* 서브메뉴 가리기 */
+        .menu:hover ul {display: block;}
+        
+        .slide_container {width: 1200px; height: 300px; background-color: yellowgreen;}
+
+        .contents {width: 1200px; height: 200px;display: flex;}
+        .contents > div {width: 400px; height: 200px;}
+
+        .con1-tab {width: 100px; height: 50px; background-color: hotpink; text-align: center; line-height: 50px;}
+        .con1-con { height: 150px; background-color: hotpink; padding: 20px;}
+
+        .con2-tab {width: 100px; height: 50px; background-color: cadetblue; text-align: center; line-height: 50px;}
+        .con2-con { height: 150px; background-color:cadetblue; padding: 15px; text-align: center;}
+        .con2-con img {width: 100px; height: 100px; text-align: center; margin: 10px;}
+        .con3 {background-color: cornflowerblue;}
+
+        .footer {width: 1200px; height: 100px; display: flex;}
+        .logo2 {width: 200px; height: 100px; background-color: darkturquoise;}
+        .copy {width: 800px; height: 100px; background-color: pink;}
+        .family {width: 200px; height: 100px; background-color: deepskyblue;}
+        
+        li:hover {cursor: pointer; background-color: white;}
+
+
+        body {position: relative;}
+        .popup {
+            width: 700px; height: 500px; border: 3px solid #333;
+            position: absolute;
+            left: 50%; margin-left: -350px; top: 150px; 
+            background-color: #FFF; 
+            padding: 30px;
+            display: none;
+        }
+        .popup h1 {border-bottom: 2px solid #000;}
+        .popup button {position: absolute; right: 15px; bottom: 15px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo1"></div>
+            <ul class="menu">
+                <li class="li"><a href="#">재단소개</a>
+                    <ul>
+                        <div class="bg-left"></div>
+                        <li><a href="#">설립취지</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">국내후원</a></li>
+                        <li><a href="#">국외후원</a></li>
+                        <li><a href="#">맞춤후원</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">서식자료실</a></li>
+                        <li><a href="#">사진자료실</a></li>
+                        <li><a href="#">후원양식</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">웹진</a></li>
+                        <li><a href="#">보고서</a></li>
+                        <li><a href="#">나의 후원</a></li>
+                        <div class="bg-right"></div>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <section class="slide_container"></section>
+        
+        <section class="contents">
+            <div class="con1">
+                <div class="con1-tab">공지사항</div>
+                <div class="con1-con">
+                    <p class="park">1. 나피리군단장박태준</p>
+                    <p>2. 말파원펀장인태준</p>
+                    <p>3. 나피리의주인</p>
+                </div>
+            </div>
+            <div class="con2">
+                <div class="con2-tab">갤러리</div>
+                <div class="con2-con">
+                    <img src="https://media.discordapp.net/attachments/1346691483775930429/1348802562811363398/1741648670482.jpg?ex=68f18246&is=68f030c6&hm=8673e22ac1ebd5e91caa810a4f04a7a91b1c9f76f1f69f66125ff5b887cde886&=&format=webp&width=732&height=939" alt="">
+                    <img src="https://media.discordapp.net/attachments/1346691483775930429/1348802562811363398/1741648670482.jpg?ex=68f18246&is=68f030c6&hm=8673e22ac1ebd5e91caa810a4f04a7a91b1c9f76f1f69f66125ff5b887cde886&=&format=webp&width=732&height=939" alt="">
+                    <img src="https://media.discordapp.net/attachments/1346691483775930429/1348802562811363398/1741648670482.jpg?ex=68f18246&is=68f030c6&hm=8673e22ac1ebd5e91caa810a4f04a7a91b1c9f76f1f69f66125ff5b887cde886&=&format=webp&width=732&height=939" alt="">
+                </div>
+
+            </div>
+            <div class="con3">배너</div>
+        </section>
+        
+        <footer class="footer">
+            <div class="logo2"></div>
+            <div class="copy"></div>
+            <div class="family"></div>
+        </footer>
+    </div>
+
+
+    <div class="popup">
+        <h1>타이틀</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorem optio vel tenetur praesentium eaque reprehenderit porro, minus deserunt perferendis aperiam sit provident ducimus placeat soluta facere aliquid obcaecati consequatur!</p>
+        <button>X 닫기</button>
+    </div>
+
+    <script>
+        const 박태준 = document.querySelector(".park")
+        const 팝업 = document.querySelector(".popup")
+        const 버튼 = document.querySelector(".popup button")
+
+        박태준.addEventListener("click", function() {
+            팝업.style.display = "block" // 팝업 띄우기
+        }) 
+
+        버튼.addEventListener("click", function() {
+            팝업.style.display = "none" // 팝업 숨기기
+        }) 
+    </script>
+</body>
+</html>
