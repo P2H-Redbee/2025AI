@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; color: #333333;}
+        body {width: 100%;}
+        .wrap{width: 1200px; margin: 0 auto;}
+        li {list-style-type: none;}
+        a {text-decoration: none;}
+
+        .header {width: 1200px; height: 100px; background-color: turquoise; display: flex; justify-content: space-between; align-items: center;}
+        .logo1{width: 200px; height: 100px; background-color: springgreen;}
+        .menu {display: flex; height: 50px; line-height: 50px; margin-right: 50px; position: relative;}
+        .menu li {width: 150px; text-align: center; background-color: rgb(170, 217, 255);}
+        
+        .li > ul {display: none;} /* 서브메뉴 가리기 */
+        .menu li:hover {cursor: pointer; background-color: white;}
+        
+        .slide_container {width: 1200px; height: 300px; background-color: rgb(224, 255, 163);}
+
+        .contents {width: 1200px; height: 200px;display: flex;}
+        .contents > div {width: 400px; height: 200px;}
+        .tab1 {width: 150px; height: 50px; background-color: coral; text-align: center; line-height: 50px;}
+        .con1-con {width: 400px; height: 150px; background-color: coral; padding: 15px;}
+        .tab2 {width: 150px; height: 50px; background-color: skyblue; text-align: center; line-height: 50px;}
+        .con2-con {width: 400px; height: 150px; background-color: skyblue; display: flex; justify-content: center; align-items: center; gap: 20px;}
+        .con2-con img {width: 100px; height: 100px;}
+        .con3 {background-color: cornflowerblue;}
+
+        .footer {width: 1200px; height: 100px; display: flex;}
+        .logo2 {width: 200px; height: 100px; background-color: darkturquoise;}
+        .copy {width: 800px; height: 100px; background-color: pink;}
+        .sns {width: 200px; height: 100px; background-color: deepskyblue;}
+        
+        body {position: relative;}
+        .popup {
+            width: 700px; height: 500px; border: 3px solid #333;
+            position: absolute;
+            left: 50%; margin-left: -350px; top: 150px; 
+            background-color: #FFF; 
+            padding: 30px;
+            display: none; z-index: 200;
+        }
+        .popup h1 {border-bottom: 2px solid #000;}
+        .popup button {position: absolute; right: 15px; bottom: 15px;}
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo1"></div>
+            <ul class="menu">
+                <li class="li"><a href="#">소장처별</a>
+                    <ul>
+                        <li><a href="#">한국</a></li>
+                        <li><a href="#">프랑스</a></li>
+                        <li><a href="#">이탈리아</a></li>
+                        <li><a href="#">독일</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">장르별</a>
+                    <ul>
+                        <li><a href="#">회화</a></li>
+                        <li><a href="#">판화</a></li>
+                        <li><a href="#">공예/고대유물</a></li>
+                        <li><a href="#">그외</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">테마별</a>
+                    <ul>
+                        <li><a href="#">초상화/인물</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">신화/문학</a></li>
+                        <li><a href="#">일상/스포츠</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">렌터카</a>
+                    <ul>
+                        <li><a href="#">1900년이전</a></li>
+                        <li><a href="#">1900년대</a></li>
+                        <li><a href="#">현대</a></li>
+                        <li><a href="#">그 외</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <section class="slide_container"></section>
+        
+        <section class="contents">
+            <div class="con1">
+                <div class="tab1">공지사항</div>
+                <div class="con1-con">
+                    <p class="park">1. 전 고객 필독 공지</p>
+                    <p class="park">2. 유럽여행 출발 전 사전 공지</p>
+                    <p class="park">3. 국내여행 출발 전 사전 공지</p>
+                    <p class="park">4. 기내수화물 규정 안내</p>
+                </div>
+            </div>
+            <div class="con2">
+                <div class="tab2">갤러리</div>
+                <div class="con2-con">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbXq9pQf1mKjGYQiHUZvKd1vLqRPJnhuWow&s" alt="">
+                    <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTZfMTMx/MDAxNTg0MzY5MjcxNTA1.5P69Dn3l3e0XPXZayr0aGZpssuEcEGDEJfU4xCzqbN8g.CVnIRetJDu6_aBxML8nU2A5o_EwxLdHwns9qXxHx9eMg.PNG.dnstlrdl473/%ED%8B%B0%EB%AA%A8_%EC%96%BC%EA%B5%B4.PNG?type=w800" alt="">
+                    <img src="https://dcimg1.dcinside.com/viewimage.php?id=21b2dc29e9&no=24b0d769e1d32ca73ceb82fa11d02831b684119e0eca622a987c4d7fe956b2843274dd4cdeea12cbcb335fb041c076d4a1bc84b13300eaa584397c86" alt="">
+                </div>
+            </div>
+            <div class="con3">배너</div>
+        </section>
+        
+        <footer class="footer">
+            <div class="logo2"></div>
+            <div class="copy"></div>
+            <div class="sns"></div>
+        </footer>
+    </div>
+
+    <div class="popup">
+        <h1>타이틀</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorem optio vel tenetur praesentium eaque reprehenderit porro, minus deserunt perferendis aperiam sit provident ducimus placeat soluta facere aliquid obcaecati consequatur!</p>
+        <button>X 닫기</button> 
+    </div>
+
+    <script>
+        const 박태준 = document.querySelector(".park")
+        const 팝업 = document.querySelector(".popup")
+        const 버튼 = document.querySelector(".popup button")
+        const 배경 = document.querySelector(".bg")
+
+        박태준.addEventListener("click", function() {
+            팝업.style.display = "block" // 팝업 띄우기
+        }) 
+
+        버튼.addEventListener("click", function() {
+            팝업.style.display = "none" // 팝업 숨기기
+        }) 
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        const 슬라이드 = $(".slide_container") // 지정
+        console.log(슬라이드)
+        // 슬라이드.addEventListener()
+        슬라이드.click(function() {
+            console.log("슬라이드 클릭함")
+        })
+        슬라이드.mouseover(function() {
+            console.log("슬라이드 mouseover")
+        })
+
+        const 메뉴 = $(".menu li")
+
+        // 마우스 올리면 부드럽게 나타남
+        메뉴.mouseover(function(){
+            $(this).children("ul").stop().slideDown()
+        })
+
+        // 마우스 나가면 부드럽게 사라짐
+        메뉴.mouseout(function(){
+            $(this).children("ul").stop().slideUp()
+        })
+
+        
+        
+
+    </script>
+
+</body>
+</html>
